@@ -1,5 +1,5 @@
-from rest_framework import serializers
-from django.core.validators import RegexValidator
+from rest_framework import serializers  # type: ignore[import]
+from django.core.validators import RegexValidator  # type: ignore[import]
 
 class StudentOnboardingSerializer(serializers.Serializer):
     # Field definitions with absolute validation limits
