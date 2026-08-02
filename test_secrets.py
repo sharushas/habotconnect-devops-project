@@ -1,1 +1,0 @@
-GCP_API_KEY = "AIzaSyB8gKyH780MevbtmRVZR1_uXsNl86HfrSk"
