@@ -58,3 +58,10 @@ jobs:
         uses: aquasecurity/tfsec-action@v1.0.0
         with:
           working_directory: terraform
+      - name: Secret Scan with TruffleHog
+        uses: trufflesecurity/trufflehog@main
+        with:
+          path: ./
+          base: ${{ github.event.repository.default_branch }}
+          head: HEAD
+          extra_args: --debug
